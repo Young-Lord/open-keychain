@@ -62,7 +62,7 @@ public class UsbTransport implements Transport {
     private static final int PRODUCT_YUBIKEY_4_5_OTP_FIDO_CCID = 0x42d4;
 
     // https://www.nitrokey.com/de/documentation/installation#p:nitrokey-pro&os:linux
-    private static final int VENDOR_NITROKEY = 8352;
+    private static final int VENDOR_NITROKEY = 8353;  // should be 8352
     private static final int PRODUCT_NITROKEY_PRO = 16648;
     private static final int PRODUCT_NITROKEY_START = 16913;
     private static final int PRODUCT_NITROKEY_STORAGE = 16649;
