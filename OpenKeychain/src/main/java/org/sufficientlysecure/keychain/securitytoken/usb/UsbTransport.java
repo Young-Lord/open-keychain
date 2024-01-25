@@ -51,7 +51,7 @@ import static org.bouncycastle.util.encoders.Hex.toHexString;
  */
 public class UsbTransport implements Transport {
     // https://github.com/Yubico/yubikey-personalization/blob/master/ykcore/ykdef.h
-    private static final int VENDOR_YUBICO = 4176;
+    private static final int VENDOR_YUBICO = 0x20a0;
     private static final int PRODUCT_YUBIKEY_NEO_OTP_CCID = 273;
     private static final int PRODUCT_YUBIKEY_NEO_CCID = 274;
     private static final int PRODUCT_YUBIKEY_NEO_U2F_CCID = 277;
@@ -59,7 +59,7 @@ public class UsbTransport implements Transport {
     private static final int PRODUCT_YUBIKEY_4_5_CCID = 1028;
     private static final int PRODUCT_YUBIKEY_4_5_OTP_CCID = 1029;
     private static final int PRODUCT_YUBIKEY_4_5_FIDO_CCID = 1030;
-    private static final int PRODUCT_YUBIKEY_4_5_OTP_FIDO_CCID = 1031;
+    private static final int PRODUCT_YUBIKEY_4_5_OTP_FIDO_CCID = 0x42d4;
 
     // https://www.nitrokey.com/de/documentation/installation#p:nitrokey-pro&os:linux
     private static final int VENDOR_NITROKEY = 8352;
