@@ -31,6 +31,7 @@ jobs:
       - name: Build project
         run: |
           ./gradlew assembleDebug
+          ls -al OpenKeychain/build/* OpenKeychain/build/*/*
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
