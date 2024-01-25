@@ -30,7 +30,7 @@ jobs:
         uses: malinskiy/action-android/install-sdk@release/0.1.0
       - name: Build project
         run: ./gradlew assembleDebug
-      -name: Upload APK
+      - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
           name: app
