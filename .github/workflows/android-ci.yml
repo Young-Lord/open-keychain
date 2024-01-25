@@ -29,9 +29,12 @@ jobs:
       - name: Install Android SDK
         uses: malinskiy/action-android/install-sdk@release/0.1.0
       - name: Build project
-        run: ./gradlew assembleDebug
+        run: |
+          ./gradlew assembleDebug
+          ls -al app || echo 1 
+          ls -al app/build || echo 2
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: app/build/outputs/apk
+          path: app/build
