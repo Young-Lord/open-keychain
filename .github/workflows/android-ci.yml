@@ -31,10 +31,10 @@ jobs:
       - name: Build project
         run: |
           ./gradlew assembleDebug
-          ls -al app || echo 1 
-          ls -al app/build || echo 2
+          ls -al OpenKeychain || echo 1 
+          ls -al OpenKeychain/build || echo 2
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: app/build
+          path: OpenKeychain/build
